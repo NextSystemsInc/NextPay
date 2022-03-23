@@ -8,7 +8,7 @@ type Props = {
 };
 
 const PriceHeader = ({ usd, sol }: Props) => (
-  <View style={{ width: "100%", alignItems: "center", backgroundColor: "#2e2e2e", padding: 20, marginTop: 40, borderRadius: 20, }}>
+  <View style={{ width: "100%", alignItems: "center", backgroundColor: "#2e2e2e", padding: 20, marginTop: 170, borderRadius: 20, }}>
     <Text
       style={{
         marginTop: 0,

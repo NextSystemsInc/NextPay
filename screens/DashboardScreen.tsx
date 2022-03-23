@@ -21,6 +21,7 @@ import {
   getSolanaPrice,
   getTokenBalance,
 } from "../api";
+import Header from "../components/Header";
 
 type Props = {
   navigation: Navigation;
@@ -156,18 +157,12 @@ const DashboardScreen = ({ navigation }: Props) => {
             left={(props) => <Avatar.Icon {...props} icon="qrcode" />}
           />
         </Card>
-
-        { /*
-        <Title>My SPL Token</Title>
-        <Paragraph>{`Balance: ${tokenBalance}`}</Paragraph>
-       */ }
+        <View style={{width: "100%", alignItems: "center", backgroundColor: "#2e2e2e", padding: 10, marginTop: 10,borderRadius: 20, }}>
+          <Title>My SPL Token</Title>
+          <Paragraph>{`Balance: ${tokenBalance}`}</Paragraph>
+        </View>
       </View>
-
-      {/*
-      <View style={styles.container}>
-        <Title>Activity</Title>
-      </View>
-      */}
+      <Header>Activites</Header>
     </Background>
   );
 };

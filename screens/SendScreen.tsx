@@ -78,10 +78,10 @@ const SendScreen = ({ navigation }: Props) => {
   };
 
   const sendTransaction = async () => {
-    setTransferText("Sending transfer...");
+    setTransferText("Transaction proceeding, please wait...");
     setVisible(true);
     const tx = await transaction(account, toAddress, Number(amount.solana));
-    setTransferText("Transfer completed!");
+    setTransferText("Transaction sent! Have the recipient to check it.");
     setAmount({ solana: 0, usd: 0 });
     setToAddress("");
   };
@@ -207,6 +207,9 @@ const SendScreen = ({ navigation }: Props) => {
           <View style={styles.priceContainer}>
             <Text>{`Available: ${balance} SOL`}</Text>
             <Text style={styles.priceAmount}>{`$${amount.usd}`}</Text>
+          </View>
+          <View>
+            <Text>A brief warning: Please be careful in some transaction, as you might be likely to be scammed easily</Text>
           </View>
         </View>
 
