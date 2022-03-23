@@ -1,4 +1,4 @@
-import { StatusBar } from "expo-status-bar";
+import { StatusBar } from "react-native";
 import React from "react";
 import { StoreProvider } from "easy-peasy";
 
@@ -17,7 +17,6 @@ import Navigation from "./navigation";
 
 export default function App() {
   const isLoadingComplete = useCachedResources();
-  // set status bar foreground to white
 
   if (!isLoadingComplete) {
     return null;
@@ -26,7 +25,7 @@ export default function App() {
       <StoreProvider store={store}>
         <PaperProvider theme={theme}>
           <Navigation />
-          <StatusBar />
+          <StatusBar barStyle="light-content"/>
         </PaperProvider>
       </StoreProvider>
     );
