@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/NextPay/static/css/main.b9ecf895.css",
+    "main.js": "/NextPay/static/js/main.88795686.js",
+    "static/js/787.e212d884.chunk.js": "/NextPay/static/js/787.e212d884.chunk.js",
+    "static/media/bitmap3.png": "/NextPay/static/media/bitmap3.266b81cff05da5836784.png",
+    "static/media/bitmap2.png": "/NextPay/static/media/bitmap2.467c28d4f7732cc55c70.png",
+    "static/media/bitmap1.png": "/NextPay/static/media/bitmap1.5c5329e436b900130b26.png",
+    "static/media/img.webp": "/NextPay/static/media/img.9d85f70e76758280c321.webp",
+    "index.html": "/NextPay/index.html",
+    "main.b9ecf895.css.map": "/NextPay/static/css/main.b9ecf895.css.map",
+    "main.88795686.js.map": "/NextPay/static/js/main.88795686.js.map",
+    "787.e212d884.chunk.js.map": "/NextPay/static/js/787.e212d884.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9ecf895.css",
+    "static/js/main.88795686.js"
+  ]
+}
