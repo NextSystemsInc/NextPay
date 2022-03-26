@@ -1,7 +1,7 @@
 {
   "name": "nextpaywebsite",
   "version": "0.1.0",
-  "homepage": "./",
+  "homepage": "https://zeankundev.github.io/NextPay",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
