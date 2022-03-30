@@ -157,10 +157,6 @@ const DashboardScreen = ({ navigation }: Props) => {
             left={(props) => <Avatar.Icon {...props} icon="qrcode" />}
           />
         </Card>
-        <View style={{width: "100%", alignItems: "center", backgroundColor: "#2e2e2e", padding: 10, marginTop: 10,borderRadius: 20, }}>
-          <Title>My SPL Token</Title>
-          <Paragraph>{`Balance: ${tokenBalance}`}</Paragraph>
-        </View>
       </View>
       <Header>Activites</Header>
     </Background>

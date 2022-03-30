@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Text, View, StyleSheet, Button } from "react-native";
 import { BarCodeScanner } from "expo-barcode-scanner";
 import { Navigation } from "../types";
-import { Paragraph } from "../components";
+import { Paragraph, BackButton, Title, Header } from "../components";
 
 type Props = {
   navigation: Navigation;
@@ -35,6 +35,7 @@ const QRScannerScreen = ({ navigation }: Props) => {
 
   return (
     <View style={styles.container}>
+      <BackButton goBack={() => navigation.navigate("Send")} />
       <BarCodeScanner
         onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         style={StyleSheet.absoluteFillObject}
@@ -51,6 +52,9 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
   },
+  header: {
+    textAlign: "center",
+  }
 });
 
 export default QRScannerScreen;

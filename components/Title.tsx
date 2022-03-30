@@ -5,7 +5,7 @@ import { theme } from "../core/theme";
 type Props = React.ComponentProps<typeof T>;
 
 const Title = ({ children, ...props }: Props) => (
-  <T style={{ color: theme.colors.accent, marginBottom: 0 }}>{children}</T>
+  <T style={{ color: theme.colors.accent, marginBottom: 0, zIndex: 7, }}>{children}</T>
 );
 
 export default Title;
