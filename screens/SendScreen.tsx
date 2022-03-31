@@ -81,7 +81,35 @@ const SendScreen = ({ navigation }: Props) => {
     setTransferText("Transaction proceeding, please wait...");
     setVisible(true);
     const tx = await transaction(account, toAddress, Number(amount.solana));
-    setTransferText("Transaction sent! Have the recipient to check it.");
+    if (tx) {
+      setTransferText("Transaction successful!");
+      setVisible(true);
+      setTimeout(() => {
+        navigation.navigate("Dashboard");
+      }, 2000);
+    }
+    // set transfer text to something if 0x1 (InsufficientFunds) error is occured
+    else if (tx.error === "0x1") {
+      setTransferText("InsufficientFunds");
+    }
+    else if (tx.error === "0x2") {
+      setTransferText("InvalidAddress");
+    }
+    else if (tx.error === "0x3") {
+      setTransferText("InvalidAmount");
+    }
+    else if (tx.error === "0x4") {
+      setTransferText("InvalidPublicKey");
+    }
+    else if (tx.error === "0x5") {
+      setTransferText("InvalidSignature");
+    }
+    else if (tx.error === "0x6") {
+      setTransferText("InvalidTransaction");
+    }
+    else if (tx.error === "0x7") {
+      setTransferText("InvalidTransactionType");
+    }
     setAmount({ solana: 0, usd: 0 });
     setToAddress("");
   };
