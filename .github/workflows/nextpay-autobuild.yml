@@ -1,8 +1,13 @@
-name: nextpay-autobild
+name: nextpay-autobuild
+on: [push]
 jobs:
   autobuild-nextpay:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      with:
+        node-version: '16'
       - run: git clone https://github.com/NextSystemsInc/NextPay
       - run: cd NextPay
       - run: yarn
