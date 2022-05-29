@@ -2,6 +2,7 @@ name: nextpay-autobuild
 on: [push]
 jobs:
   autobuild-nextpay:
+    name: Nextpay autobuild
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
