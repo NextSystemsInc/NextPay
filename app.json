@@ -20,14 +20,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.zeankundev.nextpay"
+      "bundleIdentifier": "nextsys.zeankundev.nextpay"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.zeankundev.nextpay"
+      "package": "nextsys.zeankundev.nextpay"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
