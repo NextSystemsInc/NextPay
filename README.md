@@ -1,6 +1,7 @@
 # NextPay
 Next generation Solana payment with minimalist design and Solana for 
 cryptocurrency payment (e.g. NFT, Bitcoin, etc).
+App will be on Galaxy Store and APKPure (official mirrors)
 # Installation
 You must have:
 
